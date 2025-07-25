@@ -31,7 +31,7 @@ class Home_body extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             // Search Bar
-            SeatchBar(screenWidth: screenWidth),
+            SeatchBar(screenHeight: screenHeight, screenWidth: screenWidth),
             SizedBox(height: screenHeight * 0.05),
             Text(
               "What would you like to day today?",

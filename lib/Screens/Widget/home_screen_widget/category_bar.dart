@@ -13,6 +13,7 @@ class CategoryBar1 extends StatelessWidget {
           children: const [
             Expanded(
               child: CategoryCard(
+                discountText: "10% off",
                 imagePath: "assets/icons/download.png",
                 title: "Food Delivery",
               ),
@@ -20,6 +21,7 @@ class CategoryBar1 extends StatelessWidget {
             SizedBox(width: 12),
             Expanded(
               child: CategoryCard(
+                discountText: "10% off",
                 imagePath: "assets/icons/download (1).png",
                 title: "Medicines",
               ),
@@ -27,6 +29,7 @@ class CategoryBar1 extends StatelessWidget {
             SizedBox(width: 12),
             Expanded(
               child: CategoryCard(
+                discountText: "10% off",
                 imagePath: "assets/icons/download (2).png",
                 title: "Pet Supplies",
               ),
@@ -40,7 +43,7 @@ class CategoryBar1 extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(height: 29),
+        SizedBox(height: 35),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: const [
@@ -67,6 +70,7 @@ class CategoryBar1 extends StatelessWidget {
             SizedBox(width: 12),
             Expanded(
               child: CategoryCard(
+                discountText: "10% off",
                 imagePath: "assets/icons/download (7).png",
                 title: "Stores",
               ),

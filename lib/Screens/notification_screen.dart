@@ -11,7 +11,9 @@ class NotificationScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final notificationAsync = ref.watch(notificationProvider);
     return Scaffold(
+      backgroundColor: kWhite,
       appBar: AppBar(
+        backgroundColor: kWhite,
         title: Text("Notifications"),
         leading: GestureDetector(
           onTap: () => Navigator.of(context).pop(),
@@ -27,7 +29,8 @@ class NotificationScreen extends ConsumerWidget {
             itemCount: notificaton.length,
             itemBuilder: (context, index) {
               final items = notificaton[index];
-              return Notification_card(items: items); //Notification Card
+              print("Image URL: ${items.image}");
+              return Notification_card(items: items);
             },
           );
         },
