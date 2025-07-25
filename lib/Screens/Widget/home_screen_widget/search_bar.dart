@@ -3,14 +3,9 @@ import 'package:trendora/Core/constant.dart';
 import 'package:trendora/Screens/notification_screen.dart';
 
 class SeatchBar extends StatelessWidget {
-  const SeatchBar({
-    super.key,
-    required this.screenHeight,
-    required this.screenWidth,
-  });
+  const SeatchBar({super.key, required this.screenWidth});
 
   final double screenWidth;
-  final double screenHeight;
 
   @override
   Widget build(BuildContext context) {
@@ -23,13 +18,10 @@ class SeatchBar extends StatelessWidget {
               suffixIcon: Icon(Icons.search, color: kGreen),
               fillColor: Colors.grey[200],
               filled: true,
-              contentPadding: EdgeInsets.symmetric(
-                vertical: 0,
-                horizontal: 20,
-              ),
+              contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 16),
               enabledBorder: OutlineInputBorder(
                 borderSide: BorderSide(color: Colors.transparent),
-                borderRadius: BorderRadius.circular(8),
+                borderRadius: BorderRadius.circular(12),
               ),
               focusedBorder: OutlineInputBorder(
                 borderSide: BorderSide(color: kGreen),
