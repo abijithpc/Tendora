@@ -15,7 +15,7 @@ class SeatchBar extends StatelessWidget {
           child: TextFormField(
             decoration: InputDecoration(
               hintText: 'Search for products/stores',
-              suffixIcon: Icon(Icons.search, color: Colors.grey),
+              suffixIcon: Icon(Icons.search, color: kGreen),
               fillColor: Colors.grey[200],
               filled: true,
               contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 16),
@@ -38,7 +38,34 @@ class SeatchBar extends StatelessWidget {
               MaterialPageRoute(builder: (context) => NotificationScreen()),
             );
           },
-          child: Icon(Icons.notifications_outlined, color: kRed, size: 32),
+          child: Stack(
+            clipBehavior: Clip.none,
+            children: [
+              Icon(Icons.notifications_outlined, color: kRed, size: 32),
+              Positioned(
+                right: -2,
+                top: -2,
+                child: Container(
+                  padding: EdgeInsets.all(4),
+                  decoration: BoxDecoration(
+                    color: kRed,
+                    shape: BoxShape.circle,
+                  ),
+                  constraints: BoxConstraints(minWidth: 20, minHeight: 20),
+                  child: Center(
+                    child: Text(
+                      '3',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 10,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
         SizedBox(width: screenWidth * 0.02),
         Icon(Icons.local_offer_outlined, color: kOrange, size: 32),

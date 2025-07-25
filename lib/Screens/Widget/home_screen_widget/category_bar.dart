@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:trendora/Screens/Widget/category_card.dart';
+import 'package:trendora/Screens/Widget/home_screen_widget/category_card.dart';
 
 class CategoryBar1 extends StatelessWidget {
   const CategoryBar1({super.key});
@@ -40,7 +40,7 @@ class CategoryBar1 extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(height: 17),
+        SizedBox(height: 29),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: const [

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//Category Card
 class CategoryCard extends StatelessWidget {
   final String title;
   final String imagePath;
@@ -47,9 +48,9 @@ class CategoryCard extends StatelessWidget {
         const SizedBox(height: 8),
 
         Text(
-          textAlign: TextAlign.center,
           title,
-          style: const TextStyle(fontSize: 15),
+          textAlign: TextAlign.center,
+          style: const TextStyle(fontSize: 19, fontWeight: FontWeight.normal),
         ),
       ],
     );

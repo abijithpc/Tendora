@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:trendora/Core/Widget/custom_heading.dart';
 import 'package:trendora/Core/constant.dart';
-import 'package:trendora/Screens/Widget/category_bar.dart';
-import 'package:trendora/Screens/Widget/craze_deal_card.dart';
-import 'package:trendora/Screens/Widget/near_by_store_card.dart';
-import 'package:trendora/Screens/Widget/refer_and_earn_card.dart';
-import 'package:trendora/Screens/Widget/search_bar.dart';
-import 'package:trendora/Screens/Widget/top_pick_card.dart';
-import 'package:trendora/Screens/Widget/trending_card.dart';
+import 'package:trendora/Screens/Widget/home_screen_widget/category_bar.dart';
+import 'package:trendora/Screens/Widget/home_screen_widget/craze_deal_card.dart';
+import 'package:trendora/Screens/Widget/home_screen_widget/near_by_store_card.dart';
+import 'package:trendora/Screens/Widget/home_screen_widget/refer_and_earn_card.dart';
+import 'package:trendora/Screens/Widget/home_screen_widget/search_bar.dart';
+import 'package:trendora/Screens/Widget/home_screen_widget/top_pick_card.dart';
+import 'package:trendora/Screens/Widget/home_screen_widget/trending_card.dart';
 
 class Home_body extends StatelessWidget {
   const Home_body({
@@ -38,6 +38,7 @@ class Home_body extends StatelessWidget {
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: screenHeight * 0.01),
+            //Category Bar
             CategoryBar1(),
             SizedBox(height: screenHeight * 0.02),
             Row(
@@ -50,8 +51,10 @@ class Home_body extends StatelessWidget {
             SizedBox(height: screenHeight * 0.02),
             HeadingSubheading(heading: "Top Pick for you"),
             SizedBox(height: screenHeight * 0.02),
+            //Top Pick Card
             Top_pick_Card(screenHeight: screenHeight, screenWidth: screenWidth),
             HeadingSubheading(heading: "Trending", subheading: "See all"),
+            //Trending Card
             SizedBox(
               height: screenHeight * 0.15,
               child: ListView.builder(
@@ -91,8 +94,9 @@ class Home_body extends StatelessWidget {
               ),
             ),
             HeadingSubheading(heading: "Craze deals"),
+            //Craze deal Card
             SizedBox(
-              height: screenHeight * 0.24, // Increased from 0.12 to 0.30
+              height: screenHeight * 0.24,
               child: ListView.builder(
                 itemCount: 4,
                 scrollDirection: Axis.horizontal,
@@ -109,15 +113,17 @@ class Home_body extends StatelessWidget {
               ),
             ),
             SizedBox(height: screenHeight * 0.02),
+            //Refer and Earn Card
             Refer_Earn(screenWidth: screenWidth, screenHeight: screenHeight),
             SizedBox(height: screenHeight * 0.02),
             HeadingSubheading(heading: "Nearby stores", subheading: "See all"),
             SizedBox(height: screenHeight * 0.02),
-            nearby_store_card(
+            //Near By Store Card
+            NearbyStoreCard(
               screenWidth: screenWidth,
               screenHeight: screenHeight,
             ),
-            nearby_store_card(
+            NearbyStoreCard(
               screenWidth: screenWidth,
               screenHeight: screenHeight,
             ),

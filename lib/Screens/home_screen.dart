@@ -2,10 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:trendora/Core/constant.dart';
-import 'package:trendora/Screens/Widget/category_bar.dart';
-import 'package:trendora/Screens/Widget/category_card.dart';
-import 'package:trendora/Screens/Widget/home_body.dart';
-import 'package:trendora/Screens/Widget/search_bar.dart';
+
+import 'package:trendora/Screens/Widget/home_screen_widget/home_body.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
