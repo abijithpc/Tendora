@@ -1,16 +1,33 @@
-# trendora
+# 🌟 Trendora - UI Design & Notification Integration
 
-A new Flutter project.
+Trendora is a modern e-commerce mobile and web app built with Flutter. This project focuses on building a clean and responsive UI and integrates a real-time notification system using REST API.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🎨 UI Design Highlights
 
-A few resources to get you started if this is your first Flutter project:
+| Page               | Description                                 |
+|--------------------|---------------------------------------------|
+| 🏠 Home Screen     | Banner slider, trending products, categories, Search|
+| 📬 Notification    | Lists all in-app notifications with timestamp |
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 🖼️ Figma Inspired UI
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Fully responsive across mobile and web
+- Built using `MediaQuery`,
+- Modular widgets and reusable components
+- Lucide Icons used for modern, minimal icons
+---
+
+## 🔔 Notification System with API Integration
+
+### ✅ Features
+
+- Show notification badge count on bell icon
+- Fetch notifications using REST API from backend (or Firebase)
+- Display human-readable time (e.g., _2 days ago, 38 minutes ago_)
+
+### 📦 API Endpoint Example
+
+```http
+GET /api/notifications?userId={user_id}
